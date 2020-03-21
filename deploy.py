@@ -3,7 +3,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
- @app.route("/")
+@app.route("/")
 def index():
     return("<h1>you are so beautiful</h1>")
 
