@@ -1,0 +1,19 @@
+
+<html>
+  <header>
+    <title>This is title</title>
+    <style>
+      li{
+        color: red;
+      }
+    </style>
+  </header>
+  <body>
+    <h1>Name</h1>
+    <ul>
+      {% for name in names %}
+        <li>{{name}}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

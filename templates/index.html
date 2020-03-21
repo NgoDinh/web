@@ -1,0 +1,20 @@
+
+<!-- <html>
+  <header>
+    <title>This is title</title>
+  </header>
+  <body>
+    <h1></h1>
+
+  </body>
+</html> -->
+{% extends "layout.html" %}
+{% block heading %}{{headline}}{% endblock %}
+{% block body %}
+<a href="{{ url_for('more') }}">Try me...</a>
+
+<form action="{{ url_for('hello') }}" method = "post">
+  <input type="text" name="name" placeholder="Enter your name">
+  <button>Submit</button>
+</form>
+{% endblock %}
