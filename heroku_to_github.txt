@@ -1,1 +1,1 @@
-trial connect heroku and git hub
+trial connect github to heroku
