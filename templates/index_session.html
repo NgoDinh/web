@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block heading %}Noi anh biet em dang nghi gi{% endblock %}
+{% block body %}
+    <ul>
+      <li> trial </li>
+      {% for note in notes %}
+        <li> {{ note }} </li>
+      {% endfor %}
+    </ul>
+
+    <form action="{{ url_for('index') }}" method = "post">
+      <input type="text" name="note" placeholder="Ke nghe di">
+      <button>Add note</button>
+    </form>
+
+    <a href="{{ url_for('index_flights') }}">Nghi gi nhieu the, di du dua di</a>
+{% endblock %}

@@ -1,8 +1,11 @@
 <header>
   <title>This is title</title>
+  <link rel="stylesheet" href="maxcdn.bootstrapcdn.com/bootstrap"
 </header>
 <body>
   <h1>{% block heading %}{% endblock %}</h1>
-  {% block body %}{% endblock %}
+  <div class="container">
+    {% block body %}{% endblock %}
+  </div>
 </body>
 </html>
